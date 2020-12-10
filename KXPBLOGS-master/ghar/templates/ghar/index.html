@@ -1,0 +1,425 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Rozgaar</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,700&display=swap" rel="stylesheet">
+	</head>
+
+    <style>
+
+
+    body {
+      background-color: black;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      box-sizing: border-box;
+    }
+
+    .carousel1{
+      width: 100%;
+      height: 70vh;
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(images/carousel.jpg);
+    }
+
+    .swiper-container {
+      width: 85%;
+      border-radius: 40px;
+      padding: 30px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      background-color: #f56a00;
+    }
+
+    .services{
+      justify-content: center;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .swiper1{
+      width: 100%;
+      background-image: url("images/vector1.png");
+      margin: 0px;
+      padding: 20px;
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .swiper2{
+      height: 390px;
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: white;
+      margin: 0px;
+      border-radius: 40px;
+    }
+    .swiper3{
+      height: 400px;
+    }
+
+    .servicetext{
+      font-size: 40px;
+      letter-spacing: 1px;
+      word-spacing: 2px;
+      font-family: 'Source Sans Pro', sans-serif;
+      text-align: left;
+      color: black;
+    }
+
+    .servicep{
+      font-size: 20px;
+      letter-spacing: 1px;
+      word-spacing: 2px;
+      font-family: 'Source Sans Pro', sans-serif;
+      text-align: left;
+      color: black;
+    }
+
+
+
+
+    .banner1{
+      background-image: url("images/vector1.png");
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 150px;
+      padding-top: 28px;
+      color: black;
+    }
+
+    .bannertext{
+      font-size: 60px;
+      letter-spacing: 1px;
+      word-spacing: 2px;
+      font-family: 'Source Sans Pro', sans-serif;
+      text-align: center;
+    }
+
+
+    .imagesgrid{
+      width: 90%;
+    }
+
+    .image1{
+      height: 300px;
+    }
+
+    .image2{
+      height: 300px;
+    }
+
+    .image3{
+      height: 250px;
+    }
+
+    .image4{
+      height: 580px;
+      padding-top: -10px;
+    }
+
+    .image5{
+      height: 320px;
+    }
+
+    .image6{
+      height: 210px;
+    }
+
+    .image7{
+      height: 820px;
+    }
+    .image8{
+      height: 340px;
+    }
+    .image9{
+      height: 400px;
+    }
+
+    .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.backg:hover .image {
+  opacity: 0.3 !important;
+  box-shadow: 0 10px 15px 0 white;
+}
+
+.backg:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.banner2{
+      background-image: url("images/vector1.png");
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 150px;
+      padding-top: 28px;
+      color: white;
+    }
+
+
+
+    </style>
+
+	<body style="background-color: black;">
+
+        <div class="container-fluid p-0 m-0">
+            <div class="carousel1">
+            </div>
+        </div>
+
+		<div class="container-fluid">
+			<div class="services ">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="swiper1">
+								<div class="row p-0 m-0">
+									<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 p-2">
+										<div class="swiper2 "  style="background-image: url(blog/images/buisness.jpg);">
+										</div>
+									</div>
+									<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 p-3 swiper3">
+										<h1 class="servicetext">
+एक मंच प्रदान करना</h1>
+										<hr class="m-0" style="float: left;width: 70%;height: 2px; background-color: black;"><br>
+										<p class="p-3 m-0 servicep">
+
+इस परियोजना के पीछे मुख्य मोटो उन लोगों को एक उचित प्लेटफॉर्म देना है, जो बिसनेस और उचित शुरुआत के बारे में ज्यादा नहीं जानते हैं, और जिनके पास दुकानें खोलने और अन्य निवेश करने के लिए ज्यादा पैसा नहीं है। बस एक बिसनेस अकाउंट बनाएं और शुरुआत करें 5 मिनट में आपकी सफलता।
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper1">
+								<div class="row p-0 m-0">
+									<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 p-2">
+										<div class="swiper2 "  style="background-image: url(images/women.jpg);">
+										</div>
+									</div>
+									<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 p-3 swiper3">
+										<h1 class="servicetext">Making Atmanirbhar Bharat</h1>
+										<hr class="m-0" style="float: left;width: 100%;height: 2px; background-color: black;"><br>
+										<p class="p-3 m-0 servicep">
+											We know that each of them have a special talent or expertise in doing something whether its singing,dancing, cooking, crafting and many others.This website aims at the rural people to come forward and post the things they can do and earn money this makes them atmanirbhar which is also a prime moto of our Prime Minister.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper1">
+								<div class="row p-0 m-0">
+									<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 p-2">
+										<div class="swiper2 "  style="background-image: url(images/idl.jpg);">
+										</div>
+									</div>
+									<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 p-3 swiper3">
+										<h1 class="servicetext">Providing a Good Products </h1>
+										<hr class="m-0" style="float: left;width: 70%;height: 2px; background-color: black;"><br>
+										<p class="p-3 m-0 servicep">
+											The main moto behind this project is to gave a proper platform to the ones who dnt know much about the buisness and the proper start, and the one who dont have much money to invest to open shops and other.Just make an buisness account and start your buisness in 5 minutes.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid my-5 banner1 text-center">
+			<h1 class="bannertext">Buisness In Focus </h1>
+		</div>
+		<div class="container my-5 imagesgrid">
+			<div class="row">
+				<div class="col-lg-5 col-md-5 col-xs-12 col-sm-12 p-2">
+					<div class="image1 backg">
+						<img src="images/art.jpg" class="image" style="width: 100%; height: 100%;opacity : 1;backface-visibility: hidden;transition: .5s ease;">
+						<div class="middle">
+							<div class="text">Art and Craft</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-7 col-md-7 col-xs-12 col-sm-12 p-4">
+					<div class="image2 backg">
+						<img src="images/basket.jpg" class="image" style="width: 100%; height: 100%;opacity : 1;backface-visibility: hidden;transition: .5s ease;">
+						<div class="middle">
+							<div class="text">Baskets</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+					<div class="col-lg-12 col-md-12 col-sm-12 px-4 py-3">
+						<div class="image3 backg">
+							<img src="images/paintings.jpg" class="image" style="width: 100%; height: 100%;opacity : 1;backface-visibility: hidden;transition: .5s ease;">
+							<div class="middle">
+								<div class="text">Paintings</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p-0 ">
+							<div class="image4 backg">
+								<img src="images/ceramic.jpg" class="image" style="width: 100%; height: 100%;opacity : 1;backface-visibility: hidden;transition: .5s ease;">
+								<div class="middle">
+									<div class="text">Ceramic Art</div>
+								</div>
+							</div>
+
+
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="col-lg-12 col-sm-12 col-md-12 p-0">
+								<div class="image5 backg">
+									<img src="images/idl.jpg" class="image" style="width: 100%; height: 100%;opacity : 1;backface-visibility: hidden;transition: .5s ease;">
+									<div class="middle">
+										<div class="text">Idols/Artifacts</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-lg-12 col-sm-12 col-md-12 my-5">
+								<div class="image6 backg">
+									<img src="images/suit.jpg" class="image" style="width: 100%; height: 100%;opacity : 1;backface-visibility: hidden;transition: .5s ease;">
+									<div class="middle">
+										<div class="text">Stiching/Sewing</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 py-3">
+					<div class="col-lg-12 col-md-12 col-sm-12 p-0 m-0">
+						<div class="image7 backg">
+							<img src="images/diya.jpg" class="image" style="width: 100%; height: 100%;opacity : 1;backface-visibility: hidden;transition: .5s ease;">
+							<div class="middle">
+								<div class="text">Diya's</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 p-4">
+					<div class="image8 backg">
+						<img src="images/pottery.jpg" class="image" style="width: 100%; height: 100%;opacity : 1;backface-visibility: hidden;transition: .5s ease;">
+						<div class="middle">
+							<div class="text">Pottery</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-8 col-xs-12 col-sm-12 p-2">
+					<div class="image9 backg">
+						<img src="images/masale.jpg" class="image" style="width: 100%; height: 100%;opacity : 1;backface-visibility: hidden;transition: .5s ease;">
+						<div class="middle">
+							<div class="text">Spices</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="container-fluid my-5 banner2 text-center">
+				<h1 class="bannertext">Start Your Buisness Now </h1>
+			</div>
+
+
+
+
+       <!--  Footer -->
+
+        <div class="container-fluid footer p-0">
+
+        	<div class="col-lg-12 col-md-12 "  style="background-color: #ff2205;">
+        		<div class="row">
+        		<div class="col-lg-3 col-md-3 p-5 m-0">
+                 <h1 style="color: white;font-weight: bold;">Rojgaar</h1>
+                 <hr style="text-align: center; height: 2px; background-color: black; width: 100%;">
+        	     </div>
+
+        	     <div class="col-lg-6 col-md-6 col-sm-12">
+        	     	<div class="col-lg-12 text-center col-sm-12 p-5">
+        	     		<h1 style="color: white;font-weight: bold; font-size: 30px">Sevices</h1>
+        	     	</div>
+        	     	<div class="row">
+        	     		<div class="col-lg-6 col-md-6">
+
+        	     		</div>
+        	     	</div>
+        	     </div>
+        		</div>
+        	</div>
+        </div>
+
+       <!--  Footer -->
+		<!-- Swiper JS -->
+		<script src="../package/swiper-bundle.min.js"></script>
+		<!-- Initialize Swiper -->
+		<script>
+		var swiper = new Swiper('.swiper-container', {
+		spaceBetween: 30,
+		pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+		},
+		});
+		</script>
+	</body>
+</html>
